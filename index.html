@@ -57,6 +57,13 @@
     .bio-list dt {color:var(--muted);font-size:.9rem}
     .bio-list dd {margin:0}
     @media(max-width:700px) {.bio-list>div {grid-template-columns:1fr;gap:4px}}
+    .publication-intro {color:var(--muted);font-size:.9rem}
+    .publication-group {margin-top:36px}
+    .publication-group h3 {font-size:1.1rem;color:var(--primary)}
+    .pub-count {font-size:.9rem;color:var(--muted);font-weight:400}
+    .publication-list {padding-left:1.5rem;overflow-wrap:anywhere}
+    .publication-list li {padding:0 0 18px 8px;font-size:.95rem;line-height:1.8}
+    .publication-list strong {color:var(--primary)}
     .draft-note {margin:0;color:var(--muted)}
     .footer {margin-top:48px;padding:28px 0;border-top:1px solid var(--border)}
     .footer-inner {display:flex;justify-content:space-between;gap:16px;font-size:.8rem;color:var(--muted)}
@@ -95,7 +102,7 @@
       <div class="container hero-grid">
         <img
           class="profile-image"
-          src="profile-academic.jpg"
+          src="profile-casual.jpg"
           width="1122" height="1402"
           alt="Portrait of Shogo Sato"
         >
@@ -210,23 +217,49 @@
 
     <section id="publications">
       <div class="container">
-        <p class="section-label">出版物</p>
-        <h2>Publications</h2>
-
-        <div class="publication-box">
-          <h3>Full publication list</h3>
-          <p>
-            査読付き国際会議論文、論文誌、国内会議発表の一覧は
-            <a
-              href="https://scholar.google.fr/citations?hl=ja&amp;user=L3wIpmAAAAAJ"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Google Scholar
-            </a>
-            で公開しています。主要論文の詳細は今後このページにも追加します。
-          </p>
-        </div>
+        <p class="section-label">出版物</p><h2>Publications</h2>
+        <p class="publication-intro">業績一覧（2026年4月24日時点）。最新の一覧は <a href="https://scholar.google.fr/citations?hl=ja&amp;user=L3wIpmAAAAAJ" target="_blank" rel="noopener noreferrer">Google Scholar</a> をご覧ください。</p>
+        <div class="publication-group"><h3>Journal Papers <span class="pub-count">(12)</span></h3><ol class="publication-list"><li>&quot;Three-dimensional source localization using single-view gamma camera based on point spread function analysis&quot;, <strong>S Sato</strong> , N Koshikawa, K Murasaki, R Tanida, J Kataoka, Journal of Instrumentation 21 (04), P04014</li>
+<li>&quot;ComptonUNet: A Deep Learning Model for Gamma-Ray Burst Localization with Compton Cameras under Noisy and Low-statistic Conditions&quot;, <strong>S Sato</strong> , K Tanaka, S Ogasawara, K Yamamoto, K Murasaki, R Tanida, J Kataoka, The Astrophysical Journal 999 (2), 231</li>
+<li>&quot;ComptonNet: A direct reconstruction model for Compton camera&quot;, <strong>S Sato</strong>, KS Tanaka, J Kataoka, Applied Physics Letters, 124(25), (2024)</li>
+<li>“Experimental concept validation of a proton therapy range verification system using scattered proton measurements, <strong>S Sato</strong>, H Yokokawa, M Sagisaka, Y Okazaki, R Iwashita, S Yoshida, KS Tanaka, S Yamamoto, T Yamashita, Y Kobashi, J Kataoka, Applied Physics Letters, 124(21), (2024)</li>
+<li>“Shadow Detection Based on Luminance-LiDAR Intensity Uncorrelation”, <strong>S Sato</strong>, Y Yao, T Yoshida, S Ando, J Shimamura, IEICE TRANSACTIONS on Information and Systems 106 (9), 1556-1563, (2023)</li>
+<li>“A simulation study of in-beam visualization system for proton therapy by monitoring scattered protons”, <strong>S Sato</strong>, H Yokokawa, M Hosobuchi, J Kataoka, Frontiers in Medicine 10, 1038348, (2023)</li>
+<li>“Application of machine-learning models to improve the image quality of photon-counting CT images”, T Toyoda, <strong>S Sato</strong>, H Kiji, J Kataoka, J Kotoku, M Taki, Journal of Instrumentation 16 (05), P05021, (2021)</li>
+<li>“Machine-learning Application to Fermi-LAT Data: Sharpening All-sky Map and Emphasizing Variable Sources”, <strong>S Sato</strong>, J Kataoka, S Ito, J Kotoku, M Taki, A Oyama, T Toyoda, Y Nakamura, M Yamamoto, The Astrophysical Journal 913 (2), 83, (2021)</li>
+<li>“High-statistics image generation from sparse radiation images by four types of machine-learning models”, <strong>S Sato</strong>, J Kataoka, J Kotoku, M Taki, A Oyama, L Tagawa, K Fujieda, F Nishi, T Toyoda, Journal of Instrumentation 15 (10), P10026, (2020)</li>
+<li>“Performance demonstration of a hybrid Compton camera with an active pinhole for wide-band X-ray and gamma-ray imaging”, A Omata, J Kataoka, K Fujieda, <strong>S Sato</strong>, E Kuriyama, H Kato, A Toyoshima, T Teramoto, K Ooe, Y Liu, K Matsunaga, T Kamiya, T Watabe, E Shimosegawa, J Hatazawa, Scientific reports 10 (1), 14064, (2020)</li>
+<li>“First application of the super-resolution imaging technique using a Compton camera”, <strong>S Sato</strong>, J Kataoka, J Kotoku, M Taki, A Oyama, L Tagawa, K Fujieda, F Nishi, T Toyoda, Nuclear Instruments and Methods in Physics Research Section A: Accelerators, Spectrometers, Detectors and Associated Equipment, 969, 164034, (2020)</li>
+<li>“First demonstration of portable Compton camera to visualize 223-Ra concentration for radionuclide therapy”, K Fujieda, J Kataoka, S Mochizuki, L Tagawa, <strong>S Sato</strong>, R Tanaka, K Matsunaga, T Kamiya, T Watabe, H Kato, E Shimosegawa, J Hatazawa, Nuclear Instruments and Methods in Physics Research Section A: Accelerators, Spectrometers, Detectors and Associated Equipment, 958, 162802, (2020)</li></ol></div>
+<div class="publication-group"><h3>International Conferences <span class="pub-count">(11)</span></h3><ol class="publication-list"><li>“Training-Free Photo-Realistic Point Cloud Rendering via Geometry-Aware Densification and Multi-View Refinement”, <strong>S Sato</strong> , K Murasaki, R Tanida, International Conference on Pattern Recognition (ICPR), (2026)</li>
+<li>“IPCD: Intrinsic Point-Cloud Decomposition”, <strong>S Sato</strong> , T Kaneko, S Takeda, T Shimada, K Murasaki, T Yoshida, R Tanida, A Kimura, IEEE/CVF Winter Conference on Applications of Computer Vision (WACV), (2026)</li>
+<li>“Leveraging Energy-Resolved Information in Photon-Counting Ct Via Deep Learning for Enhanced Image Quality”, R Minagawa, T Ro, J Kataoka, <strong>S Sato</strong>, M Arimoto, H Kawashima, S Kobayashi, K Okumura, F Lucyana, M Oshima, Y Furuta, J Kotoku, S Terazawa, Y Maeno, IEEE Nuclear Science Symposium (NSS), Medical Imaging Conference (MIC) and Room Temperature Semiconductor Detector Conference (RTSD), (2025)</li>
+<li>“Objective, Absolute and Hue-Aware Metrics for Intrinsic Image Decomposition on Real-World Scenes: A Proof of Concept”, <strong>S Sato</strong> , M Tsuchida, M Yamaguchi, T Kaneko, K Murasaki, T Yoshida, R Tanida, IEEE International Conference on Image Processing (ICIP), (2025)</li>
+<li>“Unsupervised Single-Image Intrinsic Image Decomposition with LiDAR Intensity Enhanced Training”, <strong>S Sato</strong>, T Kaneko, K Murasaki, T Yoshida, R Tanida, A Kimura, IEEE/CVF Winter Conference on Applications of Computer Vision (WACV), (2025)</li>
+<li>&quot;Memory-Efficient Point Cloud Registration via Overlapping Region Sampling&quot;, T Shimada, K Murasaki, <strong>S Sato</strong>, T Nishimura, T Yoshida, R Tanida, 2024 IEEE Visual Communications and Image Processing (VCIP), (2024)</li>
+<li>“Unsupervised intrinsic image decomposition with lidar intensity”, <strong>S Sato</strong>, Y Yao, T Yoshida, T Kaneko, S Ando, J Shimamura, IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), (2023)</li>
+<li>”In-situ visualization system of 3D dose distribution for precision proton therapy”, <strong>S Sato</strong>, H Yokokawa, M Hosobuchi, M Sagisaka, K Tanaka, J Kataoka, New Developments in Photodetection (NDIP2022), Oral, (2022)</li>
+<li>”First application of the super-resolution imaging technique using a Compton camera”, <strong>S Sato</strong>, J Kataoka, J Kotoku, M Taki, A Oyama, L Tagawa, K Fujieda, F Nishi, and T Toyoda, 12th International Hiroshima Symposium on the Development and Application of Semiconductor Tracking Detectors (HSTD12), (2021)</li>
+<li>” A simple identification of multiple-hit events to improve the image quality of fine pixel scintillation detector”, <strong>S Sato</strong>, J Kataoka, S Mochizuki, K Fujieda, F Nishi, 12th International Hiroshima Symposium on the Development and Application of Semiconductor Tracking Detectors (HSTD12), (2021)</li>
+<li>” A simple identification of multiple-hit events to improve the image quality of fine pixel scintillation detector”, <strong>S Sato</strong>, J Kataoka, S Mochizuki, K Fujieda, F Nishi, IEEE Nuclear Science Symposium, Medical Imaging Conference, (2021)</li></ol></div>
+<div class="publication-group"><h3>Domestic Conferences &amp; Invited Talks <span class="pub-count">(13)</span></h3><ol class="publication-list"><li>&quot;Unsupervised Intrinsic Image Decomposition with LiDAR Intensity Enhanced Training &quot;, <strong>S Sato</strong> , T Kaneko, K Murasaki, T Yoshida, R Tanida, A Kimura, 画像の認識・理解シンポジウム (MIRU2024), (2024)</li>
+<li>&quot;Evaluation Metrics for Real-World Intrinsic Image Decomposition&quot;, <strong>S Sato</strong> , M Tsuchida, M Yamaguchi, T Kaneko, K Murasaki, T Yoshida, R Tanida, 画像の認識・理解シンポジウム (MIRU2024), (2024)</li>
+<li>(招待講演) &quot;Unsupervised Intrinsic Image Decomposition With LiDAR Intensity&quot;, <strong>S Sato</strong> , Y Yao, T Yoshida, T Kaneko, S Ando, J Shimamura, 情報科学技術フォーラム（FIT2023）, (2023)</li>
+<li>&quot;Unsupervised Intrinsic Image Decomposition With LiDAR Intensity&quot;, <strong>S Sato</strong> , Y Yao, T Yoshida, T Kaneko, S Ando, J Shimamura, 画像の認識・理解シンポジウム (MIRU2023), (2023)</li>
+<li>” 散乱陽子線計測に基づく「その場」陽子線モニタリングシステムの初期検証”, <strong>佐藤将吾</strong>, 横川 広歩, 田中 香津生, 山本 誠一, 片岡 淳, 春季応用物理学会2023, (2023)</li>
+<li>” アクティブピンホールを用いた広帯域ガンマ線カメラの性能実証”, 小俣陽久， 片岡淳， 藤枝和也， <strong>佐藤将吾</strong>， 栗山映里， 加藤弘樹， 豊嶋厚史， 寺本高啓， 大江一弘， 劉雨薇， 松永恵子， 神谷貴史， 渡部直史， 下瀬川恵久， 畑澤順, 秋季応用物理学会2020, (2020)</li>
+<li>” 陽子線治療オンラインモニタに向けた二次中性子ドシメトリーカメラの開発”, 田中稜，片岡淳，<strong>佐藤将吾</strong>，西郁也, 秋季応用物理学会2020, (2020)</li>
+<li>” 4 種類の機械学習技術を用いたコンプトンカメラ画像解析”, <strong>佐藤将吾</strong>, 片岡淳, 古徳純一, 瀧雅人, 大山飛鳥, 田川怜央, 藤枝和也, 西郁也, 豊田貴也, 春季応用物理学会2020, (2020)</li>
+<li>&quot;核医学治療に向けた大面積コンプトンカメラの開発と実証&quot;, 藤枝和也， 片岡淳， 望月早駆， 田川怜央，<strong>佐藤将吾</strong>，田中稜， 小俣陽久， 松永恵子， 神谷貴史， 渡部直史， 加藤弘樹， 下瀬川恵久， 畑澤順， 大江一弘， 豊嶋厚史, 春季応用物理学会2019, (2019)</li>
+<li>&quot;革新的 X 線ガンマ線カメラによる広帯域イメージングの提案と実証&quot;, 小俣陽久， 片岡淳， 藤枝和也，<strong>佐藤将吾</strong>， 松永恵子， 神谷貴史， 渡部直史， 加藤弘樹， 下瀬川恵久， 畑澤順， 大江一弘， 豊嶋厚史, 春季応用物理学会2020, (2020)</li>
+<li>&quot;陽子線治療における二次中性子イメージングカメラの開発&quot;, 田中稜， 片岡淳， 藤枝和也，<strong>佐藤将吾</strong>， 西郁也, 秋季応用物理学会2019, (2019)</li>
+<li>&quot;RI 内用療法に向けた大面積コンプトンカメラの最適化検証&quot;, 田中稜， 片岡淳， 望月早駆， 田川怜央， 藤枝和也，<strong>佐藤将吾</strong>， 吉野将生， 鎌田圭， 吉川彰, 秋季応用物理学会2019, (2019)</li>
+<li>&quot;RI 内用療法に向けたコンプトンカメラによる223Ra イメージングの実証&quot;, 藤枝和也, 片岡淳, 望月早駆, 田川怜央, <strong>佐藤将吾</strong>, 田中稜, 松永恵子, 神谷貴史, 渡部直史, 下瀬川恵久, 畑澤順, 大須賀慎二, 春季応用物理学会2019, (2019)</li></ol></div>
+<div class="publication-group"><h3>Other Articles <span class="pub-count">(1)</span></h3><ol class="publication-list"><li>“天候や日照条件に左右されない街本来の 「真の色」 を推定する技術: 超リアルメタバース空間の構築やその照明制御が可能に”, <strong>佐藤将吾</strong>， 吉田大我， 谷田隆一, 画像ラボ/画像ラボ編集委員会 編 35 (1), 42-50, (2023)</li></ol></div>
+        <div class="publication-group"><h3>Theses</h3><ul class="publication-list">
+        <li><strong>博士論文</strong>：機械学習を用いた核医学・粒子線イメージング手法の提案と実証</li>
+        <li><strong>修士論文</strong>：深層学習を用いたガンマ線スパース画像推定法の確立</li>
+        </ul></div>
       </div>
     </section>
 
@@ -236,7 +269,7 @@
         <h2>Honors &amp; Awards</h2>
         <!-- Add verified awards in reverse chronological order:
              year, official award name, awarding organization, and associated work. -->
-        <p class="draft-note">受賞歴の詳細は準備中です。</p>
+        <p class="draft-note">該当なし（2026年4月24日時点）。</p>
       </div>
     </section>
   </main>
