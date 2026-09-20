@@ -52,6 +52,7 @@
     .publication-box {padding:0}
     .publication-box h3 {font-size:1rem;margin:0 0 10px;font-weight:600}
     .publication-box p {margin:0;max-width:800px}
+    .draft-note {margin:0;color:var(--muted)}
     .footer {margin-top:48px;padding:28px 0;border-top:1px solid var(--border)}
     .footer-inner {display:flex;justify-content:space-between;gap:16px;font-size:.8rem;color:var(--muted)}
     @media(max-width:700px) {
@@ -76,9 +77,10 @@
 
       <nav class="nav-links" aria-label="主要ナビゲーション">
         <a href="#about">About</a>
+        <a href="#bio">Short Bio</a>
         <a href="#research">Research</a>
         <a href="#publications">Publications</a>
-        <a href="#links">Links</a>
+        <a href="#awards">Awards</a>
       </nav>
     </div>
   </header>
@@ -136,8 +138,8 @@
 
     <section id="about">
       <div class="container">
-        <p class="section-label">About</p>
-        <h2>Research Profile</h2>
+        <p class="section-label">自己紹介</p>
+        <h2>About Me</h2>
 
         <p class="about-text">
           私の研究の中心課題は、画像や放射線計測などの限られた観測から、
@@ -158,9 +160,19 @@
       </div>
     </section>
 
+    <section id="bio">
+      <div class="container">
+        <p class="section-label">略歴</p>
+        <h2>Short Bio</h2>
+        <!-- Add verified education and employment records in reverse chronological order.
+             Each record should include dates, institution, and degree or position. -->
+        <p class="draft-note">学歴・職歴の詳細は準備中です。</p>
+      </div>
+    </section>
+
     <section id="research">
       <div class="container">
-        <p class="section-label">Selected Research</p>
+        <p class="section-label">研究プロジェクト</p>
         <h2>Research Projects</h2>
         <div class="project-grid">
 
@@ -190,8 +202,8 @@
 
     <section id="publications">
       <div class="container">
-        <p class="section-label">Publications</p>
-        <h2>Research Outputs</h2>
+        <p class="section-label">出版物</p>
+        <h2>Publications</h2>
 
         <div class="publication-box">
           <h3>Full publication list</h3>
@@ -210,30 +222,13 @@
       </div>
     </section>
 
-    <section id="links">
+    <section id="awards">
       <div class="container">
-        <p class="section-label">Links</p>
-        <h2>Academic Profiles</h2>
-
-        <div class="link-buttons">
-          <a
-            class="button primary"
-            href="https://scholar.google.co.jp/citations?user=L3wIpmAAAAAJ"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Google Scholar
-          </a>
-
-          <a
-            class="button"
-            href="https://github.com/ShogoSato1996"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            GitHub
-          </a>
-        </div>
+        <p class="section-label">受賞歴</p>
+        <h2>Honors &amp; Awards</h2>
+        <!-- Add verified awards in reverse chronological order:
+             year, official award name, awarding organization, and associated work. -->
+        <p class="draft-note">受賞歴の詳細は準備中です。</p>
       </div>
     </section>
   </main>
