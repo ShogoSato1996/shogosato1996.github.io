@@ -27,7 +27,7 @@
     .nav-links a {color:var(--primary)}
     .hero {padding:88px 0 72px}
     .hero-grid {display:grid;grid-template-columns:minmax(0,1fr) 210px;align-items:start;gap:64px}
-    .profile-image {grid-column:2;grid-row:1;width:210px;height:240px;object-fit:cover;background:#f5f6f8}
+    .profile-image {grid-column:2;grid-row:1;width:210px;height:auto;aspect-ratio:4 / 5;object-fit:cover;background:#f5f6f8}
     .hero-grid>div {grid-column:1;grid-row:1}
     .eyebrow,.section-label {margin:0 0 12px;color:var(--muted);font-size:.8rem;letter-spacing:.14em;text-transform:uppercase}
     h1,h2 {font-family:Georgia,"Times New Roman",serif;color:var(--primary);font-weight:500}
@@ -52,6 +52,11 @@
     .publication-box {padding:0}
     .publication-box h3 {font-size:1rem;margin:0 0 10px;font-weight:600}
     .publication-box p {margin:0;max-width:800px}
+    .bio-list {margin:0 0 30px}
+    .bio-list>div {display:grid;grid-template-columns:200px 1fr;gap:24px;padding:16px 0;border-bottom:1px solid var(--border)}
+    .bio-list dt {color:var(--muted);font-size:.9rem}
+    .bio-list dd {margin:0}
+    @media(max-width:700px) {.bio-list>div {grid-template-columns:1fr;gap:4px}}
     .draft-note {margin:0;color:var(--muted)}
     .footer {margin-top:48px;padding:28px 0;border-top:1px solid var(--border)}
     .footer-inner {display:flex;justify-content:space-between;gap:16px;font-size:.8rem;color:var(--muted)}
@@ -62,7 +67,7 @@
       .hero {padding:48px 0 24px}
       .hero-grid {grid-template-columns:1fr;gap:30px}
       .hero-grid>div {grid-column:1;grid-row:1}
-      .profile-image {grid-column:1;grid-row:2;width:150px;height:170px}
+      .profile-image {grid-column:1;grid-row:2;width:150px;height:auto}
       section {padding:28px 0}
       .footer-inner {flex-direction:column}
     }
@@ -90,8 +95,9 @@
       <div class="container hero-grid">
         <img
           class="profile-image"
-          src="profile.png"
-          alt="Shogo Satoのプロフィールイラスト"
+          src="profile-academic.jpg"
+          width="1122" height="1402"
+          alt="Portrait of Shogo Sato"
         >
 
         <div>
@@ -107,16 +113,12 @@
             NTT Human Informatics Laboratories / Waseda University
           </p>
 
-          <p class="hero-description">
-            観測データから実世界の幾何・物理・ダイナミクスを記述する研究に取り組んでいます。
-            Dynamic 3D Gaussian Splatting、Inverse Rendering、
-            Radiation Imagingを中心に、物理とAIを統合した視覚情報処理を研究しています。
-          </p>
+          <p class="hero-description" lang="en">Researcher at NTT Human Informatics Laboratories and Visiting Researcher at Waseda University. My research interests include radiation imaging and 3D computer vision.</p>
 
           <div class="link-buttons">
             <a
               class="button primary"
-              href="https://scholar.google.co.jp/citations?user=L3wIpmAAAAAJ"
+              href="https://scholar.google.fr/citations?hl=ja&amp;user=L3wIpmAAAAAJ"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -131,6 +133,7 @@
             >
               GitHub
             </a>
+            <a class="button" href="https://www.linkedin.com/in/shogo-sato/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
           </div>
         </div>
       </div>
@@ -141,12 +144,7 @@
         <p class="section-label">自己紹介</p>
         <h2>About Me</h2>
 
-        <p class="about-text">
-          私の研究の中心課題は、画像や放射線計測などの限られた観測から、
-          実世界の三次元構造、外観、運動、物理パラメータを推定することです。
-          データ駆動型モデルの表現能力と、物理モデルが持つ解釈可能性・外挿能力を統合し、
-          観測から物理的に整合した世界表現を構築することを目指しています。
-        </p>
+        <p class="about-text" lang="en">Shogo Sato received his Ph.D. from Waseda University, Japan, in 2025, with research in applied physics and computer vision. He is currently a Researcher at NTT Human Informatics Laboratories and a Visiting Researcher at Waseda University. His research interests include radiation imaging and 3D computer vision.</p>
 
         <div class="interest-list" aria-label="研究分野">
           <span class="tag">Physics-Informed AI</span>
@@ -164,9 +162,19 @@
       <div class="container">
         <p class="section-label">略歴</p>
         <h2>Short Bio</h2>
-        <!-- Add verified education and employment records in reverse chronological order.
-             Each record should include dates, institution, and degree or position. -->
-        <p class="draft-note">学歴・職歴の詳細は準備中です。</p>
+        <div lang="en">
+          <h3>Appointments</h3>
+          <dl class="bio-list">
+            <div><dt>May 2025 – Present</dt><dd><strong>Visiting Researcher</strong><br>Waseda University, Japan</dd></div>
+            <div><dt>Apr 2021 – Present</dt><dd><strong>Researcher</strong><br>NTT Human Informatics Laboratories, Japan</dd></div>
+          </dl>
+          <h3>Education</h3>
+          <dl class="bio-list">
+            <div><dt>Apr 2022 – Mar 2025</dt><dd><strong>Ph.D.</strong><br>Waseda University, Japan</dd></div>
+            <div><dt>Apr 2019 – Mar 2021</dt><dd><strong>M.S. in Applied Physics</strong><br>Waseda University, Japan</dd></div>
+            <div><dt>Apr 2015 – Mar 2019</dt><dd><strong>B.S. in Applied Physics</strong><br>Waseda University, Japan</dd></div>
+          </dl>
+        </div>
       </div>
     </section>
 
@@ -210,7 +218,7 @@
           <p>
             査読付き国際会議論文、論文誌、国内会議発表の一覧は
             <a
-              href="https://scholar.google.co.jp/citations?user=L3wIpmAAAAAJ"
+              href="https://scholar.google.fr/citations?hl=ja&amp;user=L3wIpmAAAAAJ"
               target="_blank"
               rel="noopener noreferrer"
             >
